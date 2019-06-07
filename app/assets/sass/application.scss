@@ -1,0 +1,20 @@
+/* horrible overrides */
+*{box-sizing:border-box !important;}
+// @media (min-width: 769px) { .govuk-header__logo { width: auto !important; } }
+#global-header .header-wrapper .header-global .header-logo .content { margin-left: 0 !important; }
+.full-width .govuk-width-container:not(.govuk-header__container) { max-width: 100%;  }
+.full-width .govuk-footer .govuk-width-container { max-width: 960px }
+.govuk-main-wrapper { padding-top: 0 !important; }
+.full-width .govuk-header { border-bottom-width: 0; }
+.full-width .govuk-header__container { border-bottom-width: 0; margin-bottom: 0; }
+// .govuk-header__link--service-name {
+// 	font-weight: normal !important;
+// 	margin-top: 3px;
+// 	font-size: 24px;
+// 	line-height: 1.25 !important;
+// 	margin-left: 15px;
+// }
+
+/* service manual files */
+@import "core-layout";
+@import "govuk-template";

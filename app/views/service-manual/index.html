@@ -1,0 +1,122 @@
+{% set bodyClasses = 'full-width' %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Service Manual – GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<div id="wrapper" class="direction-ltr">
+  <main role="main" id="content" lang="en">
+    <div class="full-page-width-wrapper"> 
+      <div class="gem-c-phase-banner govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">Prototype</strong>
+    <span class="govuk-phase-banner__text">  This is not a real service, and is used for testing purposes only.</span>
+        </p>
+      </div>
+    </div>
+    <header class="hero">
+      <div class="hero__content">
+        <div class="grid-row">
+          <div class="column-two-thirds">
+            <h1 class="hero__title">Service Manual</h1>
+
+            <p class="hero__description">
+              Helping government teams create and run great digital services that meet the <a href="/service-manual/service-standard">Digital Service Standard</a>.
+            </p>
+
+            <div class="hero__search search">
+              <form action="/search" method="get" role="search">
+                <label for="search" class="search__label">Search the Service Manual</label>
+                <div class="search__input">
+                  <input class="js-search-focus" name="q" id="search" type="search" title="Search the service manual">
+                </div>
+                <input type="hidden" name="filter_manual" value="/service-manual">
+                <input class="search__submit" type="submit" value="Search">
+              </form>
+            </div>
+          </div>
+
+          <div class="column-one-third">
+            <p class="hero__feedback-link"><a href="/contact/govuk">Contact the Service Manual team</a> with any comments or questions.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="full-page-width-wrapper">
+    <div class="grid-row">
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/helping-people-to-use-your-service">Accessibility and assisted digital</a></h2>
+          <p class="link-unit__description">Help and encourage people to use your service: accessibility, assisted digital, user support.  </p>
+        </div>
+      </div>
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/agile-delivery">Agile delivery</a></h2>
+          <p class="link-unit__description">How to work in an agile way: principles, tools and governance.</p>
+        </div>
+        </div>
+        <div class="column-one-third">
+          <div class="link-unit">
+            <h2 class="link-unit__title"><a href="/service-manual/design">Design</a></h2>
+            <p class="link-unit__description">Naming, structuring and scoping your service, prototyping, using design patterns.</p>
+          </div>
+        </div>
+    </div>
+    <div class="grid-row">
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/measuring-success">Measuring success</a></h2>
+          <p class="link-unit__description">How to use data to improve your service: measuring, reporting, analytics tools and techniques.</p>
+        </div>
+      </div>
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/service-assessments">Service assessments and getting on GOV.UK</a></h2>
+          <p class="link-unit__description">Check if you need a service assessment, how to book one and how to get your service on GOV.UK.</p>
+        </div>
+      </div>
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/technology">Technology</a></h2>
+          <p class="link-unit__description">Choosing technology, development, integration, hosting, testing, security and maintenance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/the-team">The team</a></h2>
+          <p class="link-unit__description">Managing a service team: recruiting the people you need, training and working with contractors.</p>
+        </div>
+      </div>
+      <div class="column-one-third">
+        <div class="link-unit">
+          <h2 class="link-unit__title"><a href="/service-manual/user-research">User research</a></h2>
+          <p class="link-unit__description">Understand user needs: plan research, prepare for sessions, share and analyse findings. </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="column-half">
+        <div class="panel">
+          <h2 class="panel__title">The Digital Service Standard</h2>
+          <p class="panel__description">The <a href="/service-manual/service-standard">Digital Service Standard</a> provides the principles of building a good digital service. This manual explains what teams can do to build great digital services that will meet the standard.</p>
+        </div>
+      </div>
+      <div class="column-half">
+        <div class="panel">
+          <h2 class="panel__title">Communities</h2>
+          <p class="panel__description"><a href="#">Join a community of practice</a> to connect with people who work in the same profession as you. <a href="/service-manual/communities/service-communities">Learn more about service communities</a> to work across departments to design and deliver an end-to-end service.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
